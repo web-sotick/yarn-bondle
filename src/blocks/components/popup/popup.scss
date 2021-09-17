@@ -1,0 +1,146 @@
+.popup {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    background: rgba(94, 93, 93, 0.521);
+
+    &__wrapper {
+        position: relative;
+        // height: 80vh;
+
+        // @include md {
+        //     height: 50vh;
+        // }
+        // @include sm{
+        //     height: 30vh;
+        //     width: 80vw;
+        // }
+
+        .swiper-slide {
+            width: auto !important;
+            max-height: auto !important;
+        }
+
+        img {
+            height: 100%;
+        }
+    }
+
+    &__container {
+        overflow-x: hidden;
+
+        &::-webkit-scrollbar {
+            width: 4px;
+            background-color: #fff;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $prime-mob;
+            border-radius: 9em;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background-color: $prime;
+        }
+
+        scrollbar-color: $prime #fff;
+        scrollbar-width: 4px;
+
+        width: calc(55vw - 90px);
+        height: 90vh;
+
+        iframe {
+            width: 100% !important;
+            height:600px;
+        }
+
+        @include md {
+            width: calc(90vw - 90px);
+            height: 90vh;
+        }
+
+        @include sm {
+
+            width: calc(100vw - 90px);
+            height: 80vh;
+
+            iframe {
+                width: 100% !important;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        // height: 80vh;
+        // @include md{
+        //     height: 50vh;
+        // }
+        // @include sm{
+        //     height: 30vh;
+        //     width: 80vw;
+        // }
+    }
+
+    &__close {
+        top: -36px;
+        left: -36px;
+        position: absolute;
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        border: 2px solid #fff;
+        border-radius: 3px;
+        background: $prime;
+        transition: .3s;
+
+        &:hover {
+            transition: .3s;
+            border: 2px solid $second;
+
+            &::after,
+            &::before {
+                background: $second;
+            }
+        }
+
+        &::after,
+        &::before {
+            top: 14px;
+            // right: 10px;
+            position: absolute;
+            display: block;
+            content: "";
+            width: 100%;
+            height: 4px;
+            background: #fff;
+            border-radius: 2px;
+        }
+
+        &::after {
+            transform: rotate(45deg);
+        }
+
+        &::before {
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+.active-popup {
+    display: flex;
+}
+
+body {}
+
+.go-to-popup {
+    cursor: pointer;
+}

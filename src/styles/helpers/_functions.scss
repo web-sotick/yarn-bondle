@@ -1,0 +1,355 @@
+.animation_btn {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+
+  &::after {
+    transition: 1.3s;
+    content: "";
+    display: block;
+    width: 20px;
+    height: 260%;
+    background-image: linear-gradient(to right,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0.07),
+        rgba(255, 255, 255, 0.14),
+        rgba(255, 255, 255, 0.21),
+        rgba(255, 255, 255, 0.28),
+        rgba(255, 255, 255, 0.35),
+        rgba(252, 252, 252, 0.29),
+        rgba(248, 248, 248, 0.23),
+        rgba(245, 245, 245, 0.18),
+        rgba(242, 242, 242, 0.12),
+        rgba(238, 238, 238, 0.06),
+        rgba(235, 235, 235, 0));
+    transform: rotateX(35deg);
+    position: absolute;
+    top: -27px;
+    left: -90px;
+    transform: rotate(45deg);
+  }
+
+  &:hover {
+    &::after {
+      left: 210%;
+    }
+  }
+}
+
+
+
+
+.bg_card_radial {
+  background: radial-gradient(111.63% 516% at 100% 82.5%, #0C4062 0%, #008EBB 100%);
+}
+
+.bg_card_two {
+  background: linear-gradient(154.47deg, #071F5D 0%, #01478A 119.49%)
+}
+
+.bg_card_three {
+  background: linear-gradient(153.82deg, #1885C1 -2.61%, #58CDFF 98.3%);
+  .explore__link {
+    color: #071F5D;
+
+    &:hover {
+
+      &::after,
+      &::before {
+        border-left: 2px solid #071F5D !important;
+      }
+    }
+  }
+
+  .explore__link::after,
+  .explore__link::before {
+    border-left: 2px solid #071F5D;
+
+  }
+
+  
+
+  
+
+  .emission__link,
+  .about-explore__card_link,
+  .explore-two__link {
+    color: #071F5D;
+
+    @media screen and (max-width: 768px) {
+      background: #071F5D;
+      color: #fff;
+    }
+
+    &:hover {
+
+      &::after,
+      &::before {
+        border-left: 2px solid #071F5D;
+
+        @media screen and (max-width: 768px) {
+          border-left: 0px solid #fff;
+        }
+      }
+    }
+
+    &::after,
+    &::before {
+      border-left: 2px solid #071F5D;
+
+      @media screen and (max-width: 768px) {
+        border-left: 0px solid #fff;
+      }
+    }
+
+  }
+
+  .explore-one__link {
+    color: #FFD749;
+    background: linear-gradient(141.51deg, #071F5D -8.13%, #01478A 80.84%);
+
+    @media screen and (max-width: 768px) {
+      background: none;
+      color: #071F5D;
+
+      &::after,
+      &::before {
+        border-left: 2px solid #071F5D;
+      }
+    }
+  }
+
+  .explore__link {
+    color: #071F5D;
+
+    &:hover {
+
+      &::after,
+      &::before {
+        border-left: 2px solid #071F5D !important;
+      }
+    }
+  }
+
+  .explore__link::after,
+  .explore__link::before {
+    border-left: 2px solid #071F5D;
+
+  }
+
+}
+
+.bg_card_mw {
+  background: linear-gradient(153.82deg, #033576 -2.61%, #136BAA 40.94%, #29B3EE 98.3%);
+}
+
+.bg_card_fore {
+  background: linear-gradient(76.01deg, #FFBA49 22.58%, #FFD749 75.42%);
+
+  .emission__card-percent,
+  .about-explore__card,
+  .explore-two__card-texts,
+  .explore-one__card-texts {
+    color: #071F5D;
+  }
+
+  .emission__card-title,
+  .about-explore__card_title,
+  .explore-two__text-title,
+  .explore-one__text-title {
+    color: #071F5D;
+  }
+
+  .emission__text,
+  .about-explore__card_subtitle,
+  .explore-two__text-subtitle,
+  .explore-one__text-subtitle {
+    color: #071F5D;
+  }
+
+  .emission__link,
+  .about-explore__card_link,
+  .explore-two__link {
+    color: #071F5D;
+
+    @media screen and (max-width: 768px) {
+      background: #071F5D;
+      color: #fff;
+    }
+
+    &:hover {
+
+      &::after,
+      &::before {
+        border-left: 2px solid #071F5D;
+
+        @media screen and (max-width: 768px) {
+          border-left: 0px solid #fff;
+        }
+      }
+    }
+
+    &::after,
+    &::before {
+      border-left: 2px solid #071F5D;
+
+      @media screen and (max-width: 768px) {
+        border-left: 0px solid #fff;
+      }
+    }
+  }
+
+  .explore-one__link {
+    color: #FFD749;
+    background: linear-gradient(141.51deg, #071F5D -8.13%, #01478A 80.84%);
+
+    @media screen and (max-width: 768px) {
+      background: none;
+      color: #071F5D;
+
+      &::after,
+      &::before {
+        border-left: 2px solid #071F5D;
+      }
+    }
+  }
+
+}
+
+.bg_card_five {
+  background: linear-gradient(76.01deg, #FFDC61 22.58%, #FFE792 75.42%);
+
+  .emission__card-percent,
+  .about-explore__card,
+  .explore-two__card-texts,
+  .explore-one__card-texts,
+  .explore__text-title,
+  .explore__text-subtitle {
+    color: #071F5D;
+  }
+
+  .emission__card-title,
+  .about-explore__card_title,
+  .explore-two__text-title,
+  .explore-one__text-title {
+    color: #071F5D;
+  }
+
+  .emission__text,
+  .about-explore__card_subtitle,
+  .explore-two__text-subtitle,
+  .explore-one__text-subtitle {
+    color: #071F5D;
+  }
+
+  .emission__link,
+  .about-explore__card_link,
+  .explore-two__link {
+    color: #071F5D;
+
+    @media screen and (max-width: 768px) {
+      background: #071F5D;
+      color: #fff;
+    }
+
+    &:hover {
+
+      &::after,
+      &::before {
+        border-left: 2px solid #071F5D;
+
+        @media screen and (max-width: 768px) {
+          border-left: 0px solid #fff;
+        }
+      }
+    }
+
+    &::after,
+    &::before {
+      border-left: 2px solid #071F5D;
+
+      @media screen and (max-width: 768px) {
+        border-left: 0px solid #fff;
+      }
+    }
+
+  }
+
+  .explore-one__link {
+    color: #FFD749;
+    background: linear-gradient(141.51deg, #071F5D -8.13%, #01478A 80.84%);
+
+    @media screen and (max-width: 768px) {
+      background: none;
+      color: #071F5D;
+
+      &::after,
+      &::before {
+        border-left: 2px solid #071F5D;
+      }
+    }
+  }
+
+  .explore__link {
+    color: #071F5D;
+
+    &:hover {
+
+      &::after,
+      &::before {
+        border-left: 2px solid #071F5D !important;
+      }
+    }
+  }
+
+  .explore__link::after,
+  .explore__link::before {
+    border-left: 2px solid #071F5D;
+
+  }
+
+}
+
+
+.bg_card_three-explore {
+  background: linear-gradient(76.01deg, #FFBA49 22.58%, #FFD749 75.42%);
+
+  .explore__text-title {
+    color: #071F5D;
+  }
+
+  .explore__text-subtitle {
+    color: #071F5D;
+  }
+
+  .explore__link {
+    color: #071F5D;
+
+    &:hover {
+
+      &::after,
+      &::before {
+        border-left: 2px solid #071F5D !important;
+      }
+    }
+  }
+
+  .explore__link::after,
+  .explore__link::before {
+    border-left: 2px solid #071F5D;
+
+  }
+}
+
+.background_section {
+  background: #EBF4FA;
+}
+
+sub {
+
+  font-size: 16px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+}
