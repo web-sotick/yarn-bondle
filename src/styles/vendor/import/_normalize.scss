@@ -69,7 +69,7 @@ figure {
 // ********** typografy ********** //
 
 // fonts family
-$main-font: 'Manrope';
+$main-font: 'Inter';
 
 // font sizes
 :root {
@@ -81,7 +81,7 @@ $main-font: 'Manrope';
 }
 
 body {
-    // font-family: $main-font;
+    font-family: $main-font;
     font-size: var(--def-fs);
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeSpeed;

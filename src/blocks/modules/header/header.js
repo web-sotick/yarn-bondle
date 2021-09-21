@@ -1,2 +1,4 @@
-console.log(typeof(1 + "1"));
-console.log(typeof("1" - 1));
+let first = {name: "ivan"}
+let second = first
+first = {name: "sasha"}
+console.log(second);
