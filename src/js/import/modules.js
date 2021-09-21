@@ -1,1 +1,2 @@
-import "./import/modules";
+import "%modules%/head/head";
+import "%modules%/header/header";
